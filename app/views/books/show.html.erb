@@ -1,0 +1,26 @@
+<% content_for(:pagetitle, "Show Detail") %>
+
+<% flash.each do |message_type, message| %>
+  <div class="success">
+    <p><%= message %> <%= message_type %></p>
+  </div>
+<% end %>
+
+<div class="detail_items">
+  <p><strong>ID</strong> : <%= @book.id %></p>
+</div>
+<div class="detail_items">
+  <p><strong>Title</strong></p>
+  <p><%= @book.title %></p>
+</div>
+<div class="detail_items">
+  <p><strong>Body</strong></p>
+  <p><%= @book.body %></p>
+</div>
+<div class="detail_items">
+  <span><%= link_to "Edit", edit_book_path(@book.id) %></span>
+  <span><%= link_to "Back", books_path %></span>
+</div>
+<div class="detail_items">
+  <span><%= link_to "Delete", book_path(@book.id), method: :delete, "data-confirm" => "ID : #{@book.id} を削除しますか？" %></span>
+</div>

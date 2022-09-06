@@ -13,3 +13,138 @@
  *= require_tree .
  *= require_self
  */
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  margin: 30px;
+}
+
+.main_sentence{
+  margin: 20px 0;
+}
+
+.create_form{
+  margin-top: 30px;
+}
+
+.form{
+  margin: 10px 0 20px;
+}
+
+.button{
+  padding: 5px;
+}
+
+textarea{
+  width: 300px;
+  height: 150px;
+}
+
+input[type="text"]{
+  width: 300px;
+}
+
+.field_with_errors{
+  background-color: red;
+  width: fit-content;
+  padding: 2px;
+}
+
+.error_message{
+  background-color: lightpink;
+  width: 500px;
+  border: 2px solid red;
+  font-size: 80%;
+}
+
+.error_message>ul{
+  padding: 50px;
+  list-style: inside;
+}
+
+.error_message>p{
+  background-color: darkred;
+  color :white;
+  font-weight: bold;
+  padding: 10px 30px;
+}
+
+.form-items{
+  display: block;
+}
+
+td,th{
+  padding: 3px 8px;
+}
+
+thead td,thead th,tbody tr:nth-last-child(1)>td,tbody tr:nth-last-child(1)>th{
+  border-bottom: 2px solid black;
+}
+
+tbody td:nth-of-type(3){
+  border-left: 1px dotted lightgray;
+}
+
+tbody td,tbody th{
+  border-bottom: 1px dotted gray;
+
+}
+
+tbody th{
+  font-weight: normal;
+  font-size: 70%;
+}
+
+table{
+  border-spacing: 0;
+}
+
+.detail_items{
+  padding: 20px 0;
+}
+
+.detail_items>p:nth-of-type(2){
+  padding-left: 30px;
+  overflow-wrap: anywhere;
+}
+
+.list,.create_form{
+  display: inline-block;
+}
+
+.create_form{
+  position: fixed;
+  margin: 20px;
+}
+
+td:nth-of-type(1){
+  max-width: 150px;
+}
+
+td:nth-of-type(2){
+  max-width: 300px;
+}
+
+td,th{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.list>h1,.list>span{
+  display: inline-block;
+}
+
+.list>span{
+  margin-top: 30px;
+}
+
+.success{
+  border: 2px solid blue;
+  background-color: lightskyblue;
+  width: fit-content;
+  padding: 5px 15px;
+}
